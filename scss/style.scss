@@ -1,0 +1,127 @@
+@import 'variables';
+@import 'mixins';
+
+body {
+    background-color: $bodybackhround;
+}
+
+header {
+    @include flexcontainer;
+
+    nav {
+        ul {
+            @include flexcontainer;
+
+            li {
+                @include flexcontainer;
+            }
+        }
+    }
+}
+
+.cardss {
+    @include cardss;
+
+
+    .text1 {
+        @include h2;
+        background-image: url(../images/Group\ 1.png)
+    }
+
+    .text {
+        @include h2;
+        background-image: url(../images/Rectangle\ 3.png);
+    }
+
+    .text2 {
+        @include h2;
+        background-image: url(../images/Rectangle\ 4.png);
+    }
+
+
+    .clock {
+        display: flex;
+        gap: 11px;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        gap: -1px;
+    }
+
+
+}
+
+.card-footer {
+    @include card-footer;
+
+
+    .can {
+        width: 238px;
+        height: 36px;
+        line-height: 11.72px;
+    }
+
+
+
+}
+
+
+
+
+h1 {
+    @include now;
+}
+
+.now {
+    @include now;
+}
+
+.middle {
+    display: flex;
+    gap: 45px;
+
+    h3 {
+        display: flex;
+        background-image: url(../images/Rectangle\ 7.png);
+        @include img;
+        justify-content: center;
+        align-items: center;
+        color: white;
+
+    }
+
+}
+
+.imgs {
+    img {
+        @include img;
+        margin-top: 42px;
+    }
+}
+
+.imgss {
+    @include imgs;
+}
+
+footer{ 
+    width: 100%;
+    height: 201px;
+    background-color: $footer-color;
+    display: flex;
+    gap: 100px;
+    color: white;
+    margin-top: 50px;
+    p{ padding-top: 58px;}
+    img{ width: 38px; 
+      }
+    .list{ display: flex;
+       gap: 100px;
+     padding-left: 137px;
+     padding-top: 58px;
+     color: $footer-text;
+        li{ display: flex;
+        flex-direction: column;}
+    }
+}

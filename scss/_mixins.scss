@@ -1,0 +1,69 @@
+@mixin theme {
+
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@mixin flexcontainer($justify: center, $items: center) {
+    display: flex;
+    gap: 35px;
+
+    color: black;
+    font-size: 11px;
+    margin-left: 40px;
+
+
+}
+
+@mixin cardss {
+    display: flex;
+    gap: 40px;
+    margin-left: 150px;
+    block-size: auto;
+
+}
+
+@mixin h2 {
+
+    background-repeat: no-repeat;
+    height: 186px;
+    padding-top: 32px;
+    padding-left: 50px;
+    color: white;
+
+
+}
+
+@mixin card-footer {
+    background-color: white;
+    width: 330px;
+    color: $text;
+    height: 171px;
+    padding-left: 37px;
+    font-size: 10px;
+    font-weight: 700px;
+    padding-top: 68px;
+    margin-top: -50px;
+}
+
+@mixin now {
+    color: black;
+    font-size: 24px;
+    margin-left: 150px;
+    margin-top: 42px;
+}
+
+@mixin img {
+    width: 758px;
+    margin-left: 138px;
+    height: 430px;
+}
+
+@mixin imgs {height: 902px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 103px;
+    
+}
